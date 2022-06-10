@@ -5,59 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="Container">
-
-    <!-- заголовок -->
+    
+<div class="container">
     <header>
-      <h1 class="title">Привет участникам соревнований!</h1>
-    </header>
+        <h1 class="title">Привет участникам соревнований!</h1>
+      </header>
 
-    <!-- основа в 2 колонки -->
-    <main>
+    <div id="one-true" class="group">
 
-        <!-- боковое меню (левая колонка) -->
-        <section class="sidebar">
-          <p class="sidebarTitle">Виды спорта:</p>
-            <ul class="sidebarList">
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Конькобежный спорт</a></li>
-              <li class="sidebarItem"><a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD#" class="sidebarLink"> Биатлон</a></li>
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Футбол</a></li>
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Стрельба из лука</a></li>
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Прыжки в длину</a></li>
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Прыжки в высоту</a></li>
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Фигурное катание</a></li>
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Синхронное плавание</a></li>
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Шахматы</a></li>
-              <li class="sidebarItem"><a href="#" class="sidebarLink"> Шашки</a></li>
-            </ul>
-        </section>
-      
-        <!-- текст с картинкой (правая колонка)-->
-        <section class="content">
+        <div class="col">
+            <p class="sidebarTitle">Виды спорта:</p>
+              <ul class="sidebarList">
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Конькобежный спорт</a></li>
+                <li class="sidebarItem"><a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD#" class="sidebarLink"> Биатлон</a></li>
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Футбол</a></li>
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Стрельба из лука</a></li>
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Прыжки в длину</a></li>
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Прыжки в высоту</a></li>
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Фигурное катание</a></li>
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Синхронное плавание</a></li>
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Шахматы</a></li>
+                <li class="sidebarItem"><a href="#" class="sidebarLink"> Шашки</a></li>
+              </ul>
+            </p>
+        </div>
+        
+        <div class="col">
+            <h2 class="contentTitle">Футбол</h2>
+            <img src="img/football.jpg" alt="" class="contentImage">
+            <p class="contentText">
+                Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) 
+                большее количество раз, чем команда соперника.<br><br>
+                
+                Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. 
+                Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, 
+                как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих чертах, 
+                которые позволяют упростить их применения в зависимости от характера игры.<br><br>
 
-          <h2 class="contentTitle">Футбол</h2>
-          <img src="img/football.jpg" alt="" class="contentImage">
-          <p class="contentText">
-            Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) 
-            большее количество раз, чем команда соперника.<br><br>
-            Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. 
-            Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, 
-            как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих чертах, 
-            которые позволяют упростить их применения в зависимости от характера игры.
-          </p>
-        </section>
-
-      </main>
-
-      <!-- подвал -->
-      <footer>
-        <h1 class="title">Главное не победа, а участие!</h1>
-      </footer>
+                Полное англоязычное название игры, "association football" ("футбол по правилам Ассоциации"), 
+                было выбрано после создания английской Футбольной ассоциации в 1863 году, чтобы отличать эту игру от других разновидностей футбола, 
+                существовавших в то время, например регби-футбол ("rugby football", "футбол по правилам Школы Рагби"), где была разрешена игра руками. 
+                Со временем длинные названия вариантов игры стали сокращаться в повседневной речи и печати. Сначала в Англии было распространено сокращение "assoc.", 
+                затем в 1880-х годах от него образовался термин "соккер" (англ. soccer) путём добавления к сокращению "-soc-" суффикса "-er" на оксфордский манер 
+                (по аналогии регби-футбол сокращённо назывался "раггер" (англ. rugger)). В периодике термин «соккер» используется по крайней мере с 1892 года. 
+                Согласно Оксфордскому словарю английского языка, самое раннее использование слова "soccer" в письменном языке зафиксировано в 1889 году в письме английского поэта 
+                Эрнеста Доусона (хотя он пишет его как socca, предположительно, потому что у него ещё не было стандартной письменной формы).<br><br>
+            </p>
+        </div>
 
     </div>
-
+    
+    <footer>
+        <h1 class="title">Главное не победа, а участие!</h1>
+    </footer>
+</div>
 </body>
 </html>
+
