@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>words</title>
+</head>
+<body>
+
+    <button id="mainButton">Click Me</button>
+    <script type="text/javascript">
+        
+        function wordComparing(a, b) {
+            if (a.length > b.length) {
+                return -1;
+            }
+            if (a.length < b.length) {
+                return 1;
+            }
+            return 0;
+            }
+
+        document.getElementById("mainButton").onclick = function() {
+            let text = prompt('Введите произвольный текст');
+
+            //избавление от знаков препинания и т.п.
+            text=text.replace(/[.,!?;:"'()]/g,'').replace(/\s-\s/g,' ');
+
+            //формирование массива слов из строки (с избавлением от дубликатов при наличии)
+            arr=[...new Set(text.toLowerCase().split(/\s/))];  
+
+            let newArr = arr.sort(wordComparing);
+
+            alert(`${newArr[0]}; ${newArr[1]}; ${newArr[2]}`);
+
+            /*
+            Пример текста: Плащ-палатка - носимое походное палаточное имущество на одного человека, выполненное из водостойкой ткани, может выполнять роль плаща и палатки. 
+            Плащ-палатка в ВС СССР (также в странах ОВД) и России представляет собой брезентовое полотнище размером 180x180 сантиметров, по углам вшиты кожаные люверсы, 
+            предназначенные для растягивания плащ-палатки на кольях или на верёвочных растяжках (в лесу, под деревьями).  
+            */
+        }
+
+    </script>
+</body>
+</html>

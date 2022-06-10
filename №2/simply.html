@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+      let N=1000;
+      let sqrt_N=Math.sqrt(N);
+
+      // основано на алгоритме "Решето Эратосфена"
+      
+      let primeNumbs = [];
+      let notPrimeNumbs = [];
+
+      for(let i = 2; i <= N; i++){
+
+        if(!notPrimeNumbs[i]){
+
+          primeNumbs.push(i);
+
+          // т.к. один из делителей составного числа в промежутке от 0 до N обязательно меньше либо равен корню квадратному из N, то при i(равному рассматриваемому простому числу) 
+          // больше корня квадратного из N все составные числа были отмечены ранее, и остаётся только добавлять неотмеченные числа в массив простых
+          if(i<=sqrt_N){
+            for(let j = i * i; j <= N; j += i){
+              notPrimeNumbs[j]=true;
+            }
+          }
+
+        }
+
+      }
+
+      console.log(primeNumbs);
+      
+    </script>  
+</body>
+</html>
